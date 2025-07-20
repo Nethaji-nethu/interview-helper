@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.section {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    border-right: 1px solid #ccc;
+}
+
+#response {
+    border-right: none;
+}
+
+button {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 300px;
+}
+
+#paragraphs, #gptResponse {
+    height: calc(100vh - 200px);
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f9f9f9;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+}
